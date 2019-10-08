@@ -14,4 +14,4 @@ CREEP (short for feature creep) is open-source micro python keyboard software.
   - built in terminal
   - arbitrary layout support
   - webserver based editor hosted on board
-  
+  - hashed storage of wifi passwords
