@@ -21,5 +21,7 @@ for sig in catchable_signals:
         signal.signal(signum, signal.SIG_IGN)
     except (OSError, RuntimeError, ValueError):
         print(sig)
+wait_until = time.time() + 10
 
-time.sleep(200)
+while time.time() < wait_until:
+	time.sleep(1)
