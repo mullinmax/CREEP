@@ -42,5 +42,7 @@ void enableRawMode() {
 
 int main() {
   enableRawMode();
+  while (1) {}
+
   return 0;
 }
