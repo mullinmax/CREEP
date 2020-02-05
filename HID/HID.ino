@@ -18,7 +18,6 @@ enum states {
   tx
 };
 states state = idle;
-char keys[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
 const int DATA_PINS[] = {2, 3, 4, 5, 6, 7, 8, 9};
 String command;
 
@@ -32,10 +31,6 @@ void setup() {
 
   //  setup keyboard
   Keyboard.begin();
-  for (int i = 0; i < sizeof(keys) / sizeof(keys[0]); i++) {
-    Keyboard.press(keys[i]);
-    Keyboard.release(keys[i]);
-  }
 
 }
 
