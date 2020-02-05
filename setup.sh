@@ -7,3 +7,7 @@ sudo python3 -m pip install keyboard
 
 #start things running
 sudo pigpiod
+
+# setup bashrc to prevent additional tty sessions
+sudo rm ~/.bashrc
+sudo cp bashrc.sh ~/.bashrc
